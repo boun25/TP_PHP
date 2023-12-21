@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fffffe;
+    font-family: Roboto Mono;
+    font-weight: bold;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    background: transparent;
+}
+
+.background{
+    z-index: -999;
+    position: fixed;
+    height: 500%;
+    width: 500%;
+    background-color: #f8f5f2;
+    opacity: 1;
+    background-image: radial-gradient(#078080 0.65px, #f8f5f2 0.65px);
+    background-size: 13px 13px;
+    animation: bgmove 60s linear infinite;
+}
+
+@keyframes bgmove {
+    0%{
+        background-position: 200px 500px;
+    }
+
+    25%{
+        background-position: -500px -700px;
+
+    }
+    50%{
+        background-position: 100px 900px;
+
+    }
+
+    75%{
+        background-position: 600px 100px;
+    }
+
+    100%{
+        background-position: -200px -500px;
+
+    }
+}
+
+
+.title{
+    font-family: 'Lilita One', sans-serif;    
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 200;
+    background: conic-gradient(from 330deg at 26% 0%, #078080, #f8f5f2);    
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.btn{
+    color: #0f0e17;
+    background: #078080;
+    font-family: Roboto Mono;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 15px 10px 15px 10px;
+    border-radius: 25px;
+    border: none;
+    max-width: 150px;
+    cursor: pointer;
+    transition: 0.3s ease-out;   
+
+}
+
+.btn:hover{
+    transition: 0.3s ease-in;
+    background: transparent;   
+}
+.mini-texte{
+    background: none;
+}
+
+.mini-texte a{
+    background: none;
+    color: #078080;
+}
+
+.mini-texte a:hover{
+    background: none;
+    color: #f45d48;
+}
+
+/* Connexion */
+
+.connect-container{
+    background: transparent;
+}
+
+.connect-form{
+    color: #222525;
+    background-color: rgba(248, 245, 242, 0.5); 
+    border-radius: 30px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form{
+    background: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+form input{
+    color: #078080;
+    border: solid #078080;
+    background: none;
+    font-family: Roboto Mono;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    padding: 15px 10px 15px 10px;
+    text-align: center;
+    outline: none;
+
+}
+
+.hide{
+    display: none;
+}
